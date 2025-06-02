@@ -1,0 +1,27 @@
+{
+  "nodos": {
+    "S1": {"tipo": "subestacion", "carga": 100},
+    "S2": {"tipo": "subestacion", "carga": 90},
+    "T1": {"tipo": "transformador", "carga": 60},
+    "T2": {"tipo": "transformador", "carga": 50},
+    "T3": {"tipo": "transformador", "carga": 40},
+    "P1": {"tipo": "poste", "carga": 20},
+    "P2": {"tipo": "poste", "carga": 10},
+    "P3": {"tipo": "poste", "carga": 15},
+    "P4": {"tipo": "poste", "carga": 25},
+    "P5": {"tipo": "poste", "carga": 30}
+  },
+  "conexiones": [
+    {"origen": "S1", "destino": "T1", "distancia": 4},
+    {"origen": "S1", "destino": "T2", "distancia": 6},
+    {"origen": "S2", "destino": "T3", "distancia": 5},
+    {"origen": "T1", "destino": "P1", "distancia": 2},
+    {"origen": "T1", "destino": "P2", "distancia": 3},
+    {"origen": "T2", "destino": "P3", "distancia": 3},
+    {"origen": "T3", "destino": "P4", "distancia": 2},
+    {"origen": "T3", "destino": "P5", "distancia": 4},
+    {"origen": "T2", "destino": "T3", "distancia": 5},  
+    {"origen": "P1", "destino": "P2", "distancia": 1},   
+    {"origen": "P3", "destino": "P4", "distancia": 2}
+  ]
+}
